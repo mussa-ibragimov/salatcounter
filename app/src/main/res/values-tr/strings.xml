@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namaz sayımı</string>
+    <string name="hint_salat_name">Namaz adı</string>
+    <string name="hint_salat_count">Namaz sayımı</string>
+    <string name="hint_salat_count_default">0</string>
+    <string name="edit">Düzenleme</string>
+    <string name="bottom_sheet_salat">%1$s: %2$d</string>
+    <string name="subtract_counter_by_one">Tek çıkart.</string>
+    <string name="increase_counter_by_one">Tek ekle.</string>
+    <string name="salat_added">Namaz %s  eklendi.</string>
+    <string name="salat_edited">Namaz %s düzenlendi.</string>
+    <string name="salat_deleted">Namaz %s silindi.</string>
+    <string name="last_updated_time">"EEE, d MMM, yy HH:mm"</string>
+    <string name="delete">Silmek</string>
+    <string name="error_could_create_new_salat">Yeni namazı eklenemedi</string>
+</resources>

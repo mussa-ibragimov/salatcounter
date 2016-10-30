@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">عداد الصلاة</string>
+    <string name="hint_salat_name">اسم الصلاة</string>
+    <string name="hint_salat_count">عدد الصلاة</string>
+    <string name="hint_salat_count_default">0</string>
+    <string name="edit">تحرير</string>
+    <string name="bottom_sheet_salat">%1$s: %2$d</string>
+    <string name="subtract_counter_by_one">طرح من جانب واحد</string>
+    <string name="increase_counter_by_one">أضف واحدا</string>
+    <string name="salat_added"> أضاف %s صلاة</string>
+    <string name="salat_edited">تحريرها %s صلاة</string>
+    <string name="salat_deleted">حذف %s صلاة</string>
+    <string name="last_updated_time">"EEE, d MMM, yy 'في 'HH:mm"</string>
+    <string name="delete">حذف</string>
+    <string name="error_could_create_new_salat">لا يمكن أن تضيف</string>
+
+
+</resources>

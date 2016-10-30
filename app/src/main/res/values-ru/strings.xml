@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Молитвы</string>
+    <string name="hint_salat_name">Название молитвы</string>
+    <string name="hint_salat_count">Количество молитв</string>
+    <string name="hint_salat_count_default">0</string>
+    <string name="edit">Редактировать</string>
+    <string name="bottom_sheet_salat">%1$s: %2$d</string>
+    <string name="subtract_counter_by_one">Отнять один с количества.</string>
+    <string name="increase_counter_by_one">Добавить один к количеству.</string>
+    <string name="salat_added">Молитва %s добавлена.</string>
+    <string name="salat_edited">Молитва %s редактирована.</string>
+    <string name="salat_deleted">Молитва %s удалена.</string>
+    <string name="last_updated_time">"EEE, d MMM, yy 'в' HH:mm"</string>
+    <string name="delete">Удалить</string>
+    <string name="error_could_create_new_salat">Не удалось добавить новую молитву</string>
+</resources>

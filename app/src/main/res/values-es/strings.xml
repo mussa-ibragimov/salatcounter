@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recuento de la oración</string>
+    <string name="hint_salat_name">Nombre de la oración</string>
+    <string name="hint_salat_count">Recuento de la oración</string>
+    <string name="hint_salat_count_default">0</string>
+    <string name="edit">Editar</string>
+    <string name="bottom_sheet_salat">%1$s: %2$d</string>
+    <string name="subtract_counter_by_one">Restar cuenta en uno</string>
+    <string name="increase_counter_by_one">Añadir recuento por uno.</string>
+    <string name="salat_added">%s oración añadido.</string>
+    <string name="salat_edited">%s oración editados.</string>
+    <string name="salat_deleted">%s oración eliminan.</string>
+    <string name="last_updated_time">"EEE, d MMM, yy 'a las' HH:mm"</string>
+    <string name="delete">Borrar</string>
+    <string name="error_could_create_new_salat">No se pudo añadir nueva oración</string>
+</resources>

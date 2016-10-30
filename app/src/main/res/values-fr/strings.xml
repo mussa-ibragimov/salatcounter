@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Comte de prière</string>
+    <string name="hint_salat_name">Nom de la prière</string>
+    <string name="hint_salat_count">Comte de prière</string>
+    <string name="hint_salat_count_default">0</string>
+    <string name="edit">Éditer</string>
+    <string name="bottom_sheet_salat">%1$s: %2$d</string>
+    <string name="subtract_counter_by_one">Soustraire compte d\'un.</string>
+    <string name="increase_counter_by_one">Ajouter un compte par.</string>
+    <string name="salat_added">%s de prière ajoutés.</string>
+    <string name="salat_edited">%s de prière édités.</string>
+    <string name="salat_deleted">%s de prière supprimé.</string>
+    <string name="last_updated_time">"EEE, d MMM, yy 'à' HH:mm"</string>
+    <string name="delete">Effacer</string>
+    <string name="error_could_create_new_salat">Impossible d\'ajouter une nouvelle prière</string>
+</resources>
