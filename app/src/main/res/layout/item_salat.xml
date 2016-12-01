@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="kz.ibragimov.salatcounter.model.Salat" />
+        <variable
+            name="viewModel"
+            type="kz.ibragimov.salatcounter.viewmodel.SalatsViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_xxsmall"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{()->viewModel.selectPosition(item)}"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:elevation="@dimen/space_xxsmall">
+
+        <LinearLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:padding="@dimen/space_small"
+                android:paddingEnd="@dimen/space_xxsmall"
+                android:paddingLeft="@dimen/space_medium"
+                android:paddingRight="@dimen/space_xxsmall"
+                android:paddingStart="@dimen/space_medium">
+
+                <TextView
+                    android:id="@+id/salat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_xxsmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:text="@{item.name}"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/salat_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_xxsmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_small">
+
+                <ImageButton
+                    android:id="@+id/subtract"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="@dimen/counter_button_width_and_height"
+                    android:layout_height="@dimen/counter_button_width_and_height"
+                    android:onClick="@{()->viewModel.subtract(item)}"
+                    android:contentDescription="@string/subtract_counter_by_one"
+                    android:src="@drawable/ic_subtract" />
+
+                <TextView
+                    android:id="@+id/salat_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_medium"
+                    android:layout_marginLeft="@dimen/space_medium"
+                    android:layout_marginRight="@dimen/space_medium"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:text='@{String.format("%1$d", item.count)}'
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/add"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="@dimen/counter_button_width_and_height"
+                    android:layout_height="@dimen/counter_button_width_and_height"
+                    android:onClick="@{()->viewModel.add(item)}"
+                    android:contentDescription="@string/increase_counter_by_one"
+                    android:src="@drawable/ic_add" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</layout>

@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".SalatCounterApplication"
+        android:name=".App"
         android:theme="@style/AppTheme">
 
         <meta-data android:name="AA_DB_NAME" android:value="SalatCounter.db" />
@@ -16,7 +16,7 @@
             android:name="AA_MODELS"
             android:value="kz.ibragimov.salatcounter.model.Salat" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

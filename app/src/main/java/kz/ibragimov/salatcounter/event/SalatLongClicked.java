@@ -1,4 +1,4 @@
-package kz.ibragimov.salatcounter.bus;
+package kz.ibragimov.salatcounter.event;
 
 import kz.ibragimov.salatcounter.model.Salat;
 
