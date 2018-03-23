@@ -40,7 +40,7 @@ public class Salat extends Model {
     }
 
     private static boolean validData(String name, String count) {
-        return name !=  null && !name.isEmpty() && count != null && !count.isEmpty();
+        return name != null && !name.isEmpty() && count != null && !count.isEmpty();
     }
 
     public static long delete(Salat salat) {

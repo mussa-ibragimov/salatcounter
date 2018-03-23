@@ -58,6 +58,13 @@ public class SalatsModel {
     }
 
     public void save(Salat salat, String name, String count, boolean created) {
+        if (count == null || count.isEmpty()) {
+            count = "0";
+        }
+        // TODO: Must be localized
+        if (name == null || name.isEmpty()) {
+            name = "Salat: " + String.valueOf(salats.size() + 1);
+        }
         Observable.just(Salat.save(salat, name, count))
                 .subscribeOn(Schedulers.computation())
                 .observeOn(AndroidSchedulers.mainThread())
