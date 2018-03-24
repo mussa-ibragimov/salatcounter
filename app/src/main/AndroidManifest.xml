@@ -30,6 +30,12 @@
             android:name="io.fabric.ApiKey"
             android:value="09292f8d74344f04b2fb95c63ef3c31fcafc9e56"
             />
+        <provider
+            android:name="com.activeandroid.content.ContentProvider"
+            android:authorities="kz.ibragimov.salatcounter"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
     </application>
 
 </manifest>
