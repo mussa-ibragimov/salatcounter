@@ -37,21 +37,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            android:src="@drawable/ic_add_light" />
-
-        <android.support.v4.widget.NestedScrollView
-            android:id="@+id/bottom_sheet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:clipToPadding="true"
-            android:padding="@dimen/space_large"
-            app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+            app:srcCompat="@drawable/ic_add_light" />
 
             <LinearLayout
+                android:id="@+id/bottom_sheet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:padding="@dimen/space_large"
+                app:behavior_hideable="true"
+                app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
 
                 <TextView
                     android:id="@+id/salat"
@@ -72,9 +68,9 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_edit"
                     android:drawablePadding="@dimen/space_medium"
-                    android:onClick="onClick"
                     android:drawableStart="@drawable/ic_edit"
                     android:gravity="start|center_vertical"
+                    android:onClick="onClick"
                     android:text="@string/edit" />
 
                 <Button
@@ -84,14 +80,10 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_delete"
                     android:drawablePadding="@dimen/space_medium"
-                    android:onClick="onClick"
                     android:drawableStart="@drawable/ic_delete"
                     android:gravity="start|center_vertical"
+                    android:onClick="onClick"
                     android:text="@string/delete" />
-
             </LinearLayout>
-
-        </android.support.v4.widget.NestedScrollView>
-
     </android.support.design.widget.CoordinatorLayout>
 </layout>
