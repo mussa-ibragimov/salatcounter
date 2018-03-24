@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         mBinding.list.setAdapter(mAdapter);
 
         mBottomSheetBehavior = BottomSheetBehavior.from(mBinding.bottomSheet);
+        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
     }
 
     protected App getApp() {
